@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+:root {
+    --primary: #4f46e5;
+    --secondary: #7c3aed;
+    --dark: #1e1b4b;
+    --background: #f6f7ff;
+    --text: #34344b;
+}
+
+* {
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: var(--background);
+    color: var(--text);
+    min-height: 100vh;
+}
+
+/* Navbar */
+
+.quiz-navbar {
+    background: linear-gradient(90deg, #312e81, #4f46e5, #7c3aed);
+    padding: 14px 0;
+    box-shadow: 0 3px 15px rgba(79, 70, 229, 0.25);
+}
+
+.navbar-brand {
+    font-size: 1.3rem;
+}
+
+/* Home page */
+
+.hero-section {
+    background: linear-gradient(135deg, #312e81, #4f46e5, #7c3aed);
+    color: white;
+    padding: 65px 30px;
+    border-radius: 22px;
+    margin-top: 50px;
+    box-shadow: 0 15px 35px rgba(79, 70, 229, 0.25);
+}
+
+.hero-section h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.section-title {
+    color: var(--dark);
+    font-weight: 700;
+    margin-top: 45px;
+    margin-bottom: 25px;
+}
+
+.category-card {
+    display: block;
+    height: 100%;
+    padding: 28px 18px;
+    background: white;
+    color: var(--dark);
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(45, 43, 102, 0.10);
+    transition: 0.25s ease;
+}
+
+.category-card:hover {
+    transform: translateY(-7px);
+    background: linear-gradient(135deg, #4f46e5, #7c3aed);
+    color: white;
+    box-shadow: 0 15px 28px rgba(79, 70, 229, 0.28);
+}
+
+/* General cards */
+
+.page-card {
+    background: white;
+    border: none;
+    border-radius: 18px;
+    box-shadow: 0 10px 28px rgba(45, 43, 102, 0.10);
+}
+
+/* Quiz page */
+
+.timer-box {
+    background: white;
+    color: var(--primary);
+    padding: 7px 14px;
+    border-radius: 9px;
+    font-weight: 700;
+}
+
+.question-card {
+    background: white;
+    border: none;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(45, 43, 102, 0.09);
+}
+
+.option-label {
+    display: block;
+    padding: 12px;
+    border: 1px solid #e2e4f3;
+    border-radius: 9px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.option-label:hover {
+    background-color: #eef0ff;
+    border-color: var(--primary);
+}
+
+/* Buttons */
+
+.quiz-button {
+    background: linear-gradient(135deg, #4f46e5, #7c3aed);
+    border: none;
+    color: white;
+    font-weight: 600;
+    border-radius: 9px;
+    padding: 10px 24px;
+}
+
+.quiz-button:hover {
+    background: linear-gradient(135deg, #4338ca, #6d28d9);
+    color: white;
+}
+
+/* Tables */
+
+.table {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(45, 43, 102, 0.08);
+}
+
+.table thead {
+    background: linear-gradient(90deg, #4f46e5, #7c3aed);
+    color: white;
+}
+
+/* Login and signup */
+
+.auth-card {
+    max-width: 450px;
+    margin: 70px auto;
+    background: white;
+    border: none;
+    border-radius: 18px;
+    box-shadow: 0 12px 30px rgba(45, 43, 102, 0.13);
+}
+
+/* Mobile */
+
+@media (max-width: 576px) {
+    .hero-section {
+        margin-top: 30px;
+        padding: 45px 20px;
+    }
+
+    .hero-section h1 {
+        font-size: 1.9rem;
+    }
+
+    .navbar-brand {
+        font-size: 1.1rem;
+    }
+}
+
+.auth-card input[type="text"],
+.auth-card input[type="password"] {
+    width: 100%;
+    padding: 11px 12px;
+    border: 1px solid #d8daeb;
+    border-radius: 9px;
+    outline: none;
+    margin-top: 6px;
+}
+
+.auth-card input[type="text"]:focus,
+.auth-card input[type="password"]:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.12);
+}
+
+.auth-card label {
+    font-weight: 600;
+    color: var(--dark);
+}
+
+.auth-card .helptext {
+    display: block;
+    font-size: 0.78rem;
+    color: #6b6b80;
+    margin-top: 5px;
+}
+
+.auth-card ul {
+    font-size: 0.78rem;
+    color: #6b6b80;
+    padding-left: 20px;
+}
